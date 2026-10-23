@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ApexPlanet Task 2</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <h2>ApexPlanet Task 2</h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#todo">To-Do List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to My Website</h1>
+
+        <p>
+            This project demonstrates HTML, CSS, JavaScript,
+            Form Validation and Responsive Web Design.
+        </p>
+
+        <a href="#contact" class="btn">Contact Me</a>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="container">
+        <h2>Contact Form</h2>
+
+        <form id="contactForm">
+
+            <label for="name">Full Name</label>
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+            >
+
+            <label for="email">Email Address</label>
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+            >
+
+            <label for="message">Message</label>
+            <textarea
+                id="message"
+                rows="5"
+                placeholder="Write your message"
+            ></textarea>
+
+            <button type="submit" class="btn">
+                Submit
+            </button>
+
+            <p id="formMessage" aria-live="polite"></p>
+
+        </form>
+    </section>
+
+    <!-- To-Do List -->
+    <section id="todo" class="container">
+        <h2>My To-Do List</h2>
+
+        <div class="todo-input">
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter a new task"
+            >
+
+            <button type="button" id="addTaskBtn" class="btn">
+                Add Task
+            </button>
+        </div>
+
+        <ul id="taskList"></ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 My Website | ApexPlanet Internship Task 2</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
